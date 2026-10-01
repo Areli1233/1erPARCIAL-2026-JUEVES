@@ -1,17 +1,3 @@
-class Nodo:
-    def __init__(self, dato, sig=None):
-        self._elem = dato
-        self._nxt = sig
-
-class ListaEnlazada:
-    def __init__(self):
-        self.header = Nodo(0)
-
-
-
-
-
-
 
 class Nodo:
     def __init__(self, dato, sig=None):
@@ -121,11 +107,11 @@ class ProductoKwikE:
         return self.id_producto == otro.id_producto and self.descripcion == otro.descripcion
 
 
-    class KwikEMart:
-        def __init__(self):
-            self.bebidas = ListaEnlazada()
-            self.snacks = ListaEnlazada()
-            self.conveniencia = ListaEnlazada()
+class KwikEMart:
+    def __init__(self):
+        self.bebidas = ListaEnlazada()
+        self.snacks = ListaEnlazada()
+        self.conveniencia = ListaEnlazada()
 
     def _obtener_pasillo(self, pasillo):
         if pasillo == "Bebidas":
